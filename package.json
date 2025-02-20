@@ -1,0 +1,12 @@
+{
+  "name": "web-scraper",
+  "version": "1.0.0",
+  "description": "Simple web scraper using Puppeteer",
+  "main": "scrape.js",
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "scripts": {
+    "start": "node scrape.js"
+  }
+}
