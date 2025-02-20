@@ -10,19 +10,19 @@ This Flask app reads the scraped_data.json file.<br>  Serves the data as JSON ov
 Combine both stages in a single Dockerfile using multi-stage builds.
 ## Step 4: Create package.json: For Node dependencies and requirements.txt: For Python dependencies. 
 ## Step 5:
-1) Command for cloning  this repository to your ec2 instance 
+1) Command to clone the repository to your ec2 instance 
    ```bash
    git clone https://github.com/Anju12345hub/node-python-scraping-app.git
    cd node-python-scraping-app
    ```
    
-2) Command for build the docker image by accepting the URL as arguiment 
+2) Command to build the docker image while passing the URL as an argument 
    ```bash
    docker build --build-arg SCRAPE_URL="www.example.com" web-scraper .
    ```
    Replace "https://www.example.com" with the actual URL you want to scrape.
 
-3) Command for running the container
+3) Command to run the docker container
    ```bash
    docker run -d -p 5000:5000 web-scraper
    ```
