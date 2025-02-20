@@ -1,15 +1,17 @@
 # node-python-scraping-app
 This project uses Puppeteer with Node.js to scrape a user-provided URL and serves the scraped data via a Python Flask web server.
-Prerequisites:
+## Prerequisites:
 Install docker on your machine
-## Step 1: Create scrape.js for scrape the data from the user specified URL and save the content like page title and heading as JSON
+## Step 1: Create scrape.js 
 Uses Puppeteer to launch a headless browser
-## Step2: Create server.py
-This Flask app will serve the scraped JSON data
-## Step3: Create Multi-stage Dockerfile 
+Scrape the data from the user specified URL and save the content like page title and heading as JSON
+## Step 2: Create server.py
+This Flask app reads the scraped_data.json file
+Serves the data as JSON over HTTP
+## Step 3: Create Multi-stage Dockerfile 
 Combine both stages in a single Dockerfile using multi-stage builds.
-## Step4: Create package.json: For Node dependencies.  and requirements.txt: For Python dependencies. 
-## Step5
+## Step 4: Create package.json: For Node dependencies and requirements.txt: For Python dependencies. 
+## Step 5:
 1) Command for cloning  this repository to your ec2 instance 
    ```bash
    git clone https://github.com/Anju12345hub/node-python-scraping-app.git
