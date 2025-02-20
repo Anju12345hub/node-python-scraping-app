@@ -3,9 +3,9 @@ This project uses Puppeteer with Node.js to scrape a user-provided URL and serve
 ## Prerequisites:
 Install docker on your machine
 ## Step 1: Create scrape.js 
-Uses Puppeteer to launch a headless browser  Scrape the data from the user specified URL and save the content like page title and heading as JSON
+Uses Puppeteer to launch a headless browser.  Scrape the data from the user specified URL and save the content like page title and heading as JSON
 ## Step 2: Create server.py
-This Flask app reads the scraped_data.json file  Serves the data as JSON over HTTP
+This Flask app reads the scraped_data.json file.  Serves the data as JSON over HTTP
 ## Step 3: Create Multi-stage Dockerfile 
 Combine both stages in a single Dockerfile using multi-stage builds.
 ## Step 4: Create package.json: For Node dependencies and requirements.txt: For Python dependencies. 
